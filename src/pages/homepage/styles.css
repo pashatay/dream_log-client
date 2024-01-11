@@ -1,0 +1,107 @@
+.greeting {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 5vh;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 5rem;
+  text-align: center;
+}
+nav div {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+nav i {
+  font-size: 5em;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.ri-tools-fill {
+  font-size: 2.2rem;
+  float: left;
+  margin: 5%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.ri-delete-bin-6-fill {
+  font-size: 2rem;
+  float: right;
+  margin: 5%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+a {
+  text-decoration: none;
+}
+@media (max-height: 640px) and (max-width: 361px) {
+  .greeting {
+    font-size: 1.4rem;
+  }
+  nav {
+    margin-top: 2.2rem;
+  }
+  nav i {
+    font-size: 3.5rem;
+  }
+  .ri-tools-fill {
+    font-size: 2rem;
+  }
+  .ri-delete-bin-6-fill {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  nav {
+    margin-top: 5%;
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (min-device-width: 319px) and (max-device-width: 825px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  nav {
+    margin-top: 5%;
+    flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .greeting {
+    font-size: 2rem;
+  }
+  nav {
+    margin-top: 10%;
+    flex-wrap: nowrap;
+  }
+  nav i {
+    font-size: 8rem;
+  }
+  nav i:hover {
+    color: rgba(255, 255, 0, 0.801);
+    text-shadow: 0 0 15px rgb(235, 235, 245);
+  }
+  h5 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .ri-delete-bin-6-fill:hover,
+  .ri-tools-fill:hover {
+    text-shadow: 0 0 10px rgb(235, 235, 245);
+  }
+}
+
+@media only screen and (max-height: 640px), (max-width: 300px) {
+  footer {
+    position: relative;
+  }
+}

@@ -1,0 +1,44 @@
+.signup-form {
+  text-align: center;
+  margin-top: 10vh;
+}
+.signup-form input {
+  -webkit-border-radius: 0;
+  border: 0;
+  width: 80vw;
+  box-sizing: border-box;
+  height: 7vh;
+}
+.signup-have-an-account {
+  text-align: center;
+}
+
+a {
+  color: rgb(235, 235, 245);
+  text-decoration: underline;
+}
+
+.signup-have-an-account:link,
+.signup-have-an-account:visited {
+  text-decoration: none;
+  color: rgb(235, 235, 245);
+}
+
+@media only screen and (min-width: 1024px) {
+  .html body {
+    background: red important!;
+  }
+  .signup-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .signup-form input {
+    width: 40vw;
+  }
+  .signup-have-an-account {
+    text-align: center;
+  }
+}

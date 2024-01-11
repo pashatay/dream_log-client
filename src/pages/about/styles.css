@@ -1,0 +1,95 @@
+.carousel-laptop {
+  display: none;
+}
+.carousel-phones {
+  display: flex;
+  flex-direction: column;
+}
+.carousel .slide {
+  background: none !important;
+  margin: auto !important;
+}
+.carousel .slide img {
+  width: 80% !important;
+}
+.carousel .thumbs-wrapper {
+  margin: 0 !important;
+  overflow: inherit !important;
+}
+.carousel .thumb {
+  display: none !important;
+}
+.carousel .control-dots {
+  position: inherit !important;
+  width: 90% !important;
+}
+.dream-image {
+  width: 18rem;
+  align-self: center;
+  -webkit-filter: drop-shadow(1px 1px 2px rgb(0, 224, 253));
+  filter: drop-shadow(1px 1px 2px rgb(0, 224, 253));
+}
+
+.about-p,
+.last-p {
+  align-self: center;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 4%;
+}
+.demo-image {
+  margin: 7%;
+  box-shadow: 0 0 30px rgb(235, 235, 245);
+}
+.demo-image-laptop {
+  display: none;
+}
+.about-signup-link {
+  align-self: center;
+  text-align: center;
+  padding: 0.5rem;
+  width: 40%;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  background: #5c258a;
+}
+
+@media (min-width: 1024px) {
+  .carousel-phones {
+    display: none;
+  }
+  .carousel-laptop {
+    display: block;
+    width: 80%;
+    margin: 0;
+    padding: 4rem;
+    margin: auto;
+  }
+  .dream-image {
+    margin-top: -5%;
+    width: 25rem;
+    margin: auto;
+  }
+
+  .carousel .control-dots {
+    width: auto !important;
+  }
+  .about-p,
+  .last-p {
+    font-size: 1.4rem;
+    padding: 0%;
+    width: 70%;
+    margin: auto;
+  }
+  .last-p {
+    padding: 2%;
+  }
+  .about-signup-button {
+    padding: 2%;
+  }
+  .about-signup-link {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    width: 20rem;
+  }
+}

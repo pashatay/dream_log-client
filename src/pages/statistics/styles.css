@@ -1,0 +1,96 @@
+.statistics-filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  height: auto;
+  padding: 5%;
+}
+.statistics-filter select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: auto;
+  height: 3rem;
+  padding-right: 10%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  text-align: center;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background: #020433;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  color: rgb(235, 235, 245);
+  border-radius: 0;
+  box-sizing: border-box;
+  background-image: url("../../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 0.1rem top 50%, 0 0;
+  background-size: 1.9rem auto, 100%;
+}
+
+.statistics-filter h3 {
+  height: 30px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.charts div {
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0.5px 0 0px rgb(235, 235, 245);
+}
+
+@media (max-height: 640px) and (max-width: 361px) {
+  .statistics-filter select {
+    height: 2.1rem;
+    font-size: 1.1rem;
+  }
+}
+@media (max-height: 740px) and (min-height: 641px) {
+  .statistics-filter select {
+    height: 2.4rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 825px) and (orientation: landscape) {
+  .statistics-filter select {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .statistics-filter select {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .total-dreams {
+    font-size: 1.7rem;
+  }
+  .charts {
+    padding: 0;
+  }
+  .charts div {
+    width: 60vw;
+    font-size: 1.7rem;
+    margin: auto;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid rgb(235, 235, 245);
+    box-shadow: 0 0.5px 0 0px rgb(235, 235, 245);
+  }
+}

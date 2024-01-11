@@ -1,0 +1,176 @@
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+}
+
+.adddream-form {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-top: 5vh;
+  justify-content: space-around;
+}
+
+.adddream-form > input {
+  font-size: 1.3rem;
+  -webkit-border-radius: 0;
+  border: 0;
+  width: 90vw;
+  height: 50px;
+  margin: auto;
+  box-sizing: border-box;
+  background: none;
+  color: rgb(235, 235, 245);
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+}
+.adddream-form ::placeholder {
+  color: rgba(235, 235, 245, 0.692);
+}
+.adddream-form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-left: 30%;
+  width: 90vw;
+  height: 50px;
+  box-sizing: border-box;
+  -webkit-border-radius: 0;
+  outline: 1px inset #fff;
+  outline-offset: -1px;
+  font-size: 1.3rem;
+  margin: 5%;
+  background: #020433;
+  color: rgba(235, 235, 245, 0.692);
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+  background-image: url("../../images/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 0.2em top 40%, 0 0;
+  background-size: 1.7em auto, 100%;
+}
+
+.adddream-form textarea {
+  margin-top: 5%;
+  align-self: center;
+  box-sizing: border-box;
+  -webkit-border-radius: 0;
+  border: 0;
+  width: 90vw;
+  height: 15vh;
+  margin-bottom: 5%;
+  color: rgb(235, 235, 245);
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 3%;
+  background: none;
+  border: 1px solid rgb(235, 235, 245);
+  box-shadow: 0 0 10px rgb(235, 235, 245);
+}
+
+.private-checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.private-checkbox input {
+  align-self: center;
+  width: 20px;
+}
+.private-checkbox h3 {
+  align-self: center;
+}
+
+.adddream-form input[type="submit"] {
+  background: #5c258a;
+  cursor: pointer;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .adddream-form {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+  }
+  .adddream-form > input {
+    width: 40vw;
+  }
+  .adddream-form select {
+    width: 40vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 30vw;
+    padding-left: 15vw;
+  }
+  .private-checkbox {
+    width: 100%;
+  }
+  .adddream-form textarea {
+    width: 40vw;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+    padding-top: 1%;
+  }
+}
+
+@media only screen and (min-device-width: 319px) and (max-device-width: 825px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .adddream-form {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+  }
+  .adddream-form > input {
+    width: 40vw;
+  }
+  .adddream-form select {
+    width: 40vw;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 30vw;
+    padding-left: 15vw;
+  }
+  .private-checkbox {
+    width: 100%;
+  }
+  .adddream-form textarea {
+    width: 40vw;
+    height: 30vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0;
+    padding-top: 1%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .adddream-form {
+    margin-top: 15vh;
+  }
+  .adddream-form > input {
+    max-width: 40vw;
+    margin-right: 50vw;
+    height: 4rem;
+  }
+  .adddream-form select {
+    max-width: 40vw;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 50vw;
+    padding-left: 15vw;
+    height: 4rem;
+  }
+  .private-checkbox {
+    max-width: 40vw;
+    margin-left: 10vw;
+  }
+  .adddream-form textarea {
+    position: fixed;
+    top: 7vh;
+    left: 7%;
+    max-width: 40vw;
+    margin-left: 50vw;
+    height: 80vh;
+    font-size: 2rem;
+  }
+}
